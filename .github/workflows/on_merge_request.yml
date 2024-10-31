@@ -1,0 +1,23 @@
+name: Use Secret on Pull Request
+
+on:
+  pull_request:
+    branches:
+      - "*"
+
+jobs:
+  use_secret_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Step 2: Use the secret
+      - name: Access the secret
+        env:
+          SECRET_KEY: ${{ secrets.MY_SECRET_KEY }}
+        run: |
+          echo "Using the secret securely in a pull request."
+          echo "The secret key is: $SECRET_KEY"
