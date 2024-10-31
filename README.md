@@ -67,7 +67,3 @@ By default, GitHub Actions workflows run on pull requests. However, secrets can 
 ### Additional Tips
 - **Regularly review** and rotate secrets to maintain security.
 - **Audit access** to your repository settings to prevent unauthorized changes.
-
----
-
-Following these steps ensures secure branch protections, secret management, and workflow safeguards against potential security risks.
