@@ -20,7 +20,4 @@ jobs:
           SECRET_KEY: ${{ secrets.MY_SECRET_KEY }}
         run: |
           echo "Using the secret securely in a pull request."
-          # Simulating using the secret in a script
           echo "The secret key is: $SECRET_KEY"
-          # Ensure the secret is not accidentally printed by using a placeholder or masking approach.
-          echo "Using the secret for an API call or configuration here."
